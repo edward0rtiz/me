@@ -25,7 +25,7 @@
 body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.8;
   color: rgba(0, 0, 0, 0.7); }
   @media screen and (max-width: 992px) {
@@ -275,7 +275,7 @@ figure {
         display: block;
         margin-bottom: 10px; }
         #colorlib-hero .flexslider .flex-control-nav li a {
-          background: rgba(0, 0, 0, 0.5);
+          background: rgba(245, 245, 245, 0.5);
           -webkit-box-shadow: none;
           box-shadow: none;
           width: 12px;
@@ -283,7 +283,7 @@ figure {
           cursor: pointer; }
           #colorlib-hero .flexslider .flex-control-nav li a.flex-active {
             cursor: pointer;
-            background: transparent;
+            background: solid;
             border: 2px solid #2c98f0; }
     #colorlib-hero .flexslider .flex-direction-nav {
       display: none; }

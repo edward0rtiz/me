@@ -19,7 +19,7 @@ export default class Contact extends Component {
                                         <i class="icon-globe-outline"></i>
                                     </div>
                                     <div class="colorlib-text">
-                                        <p><a>edwardarmandoortiz@gmail.com</a></p>
+                                        <p><a href="mailto:edwardarmandoortiz@gmail.com">edwardarmandoortiz@gmail.com</a></p>
                                     </div>
                                 </div>
 

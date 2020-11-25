@@ -37,7 +37,7 @@ export default class About extends Component {
                                     </span>
                                     <div className="desc">
                                         <h3>Product Management </h3>
-                                        <p>All projects needs to be managed based on the complexity and the impact to shareholders. Its not just PMI, Scrum or Agile. </p>
+                                        <p>Projects are unique and must be managed properly, not just PMI, Scrum or Agile. </p>
                                     </div>
                                 </div>
                             </div>
@@ -48,7 +48,7 @@ export default class About extends Component {
                                     </span>
                                     <div className="desc">
                                         <h3>Programming</h3>
-                                        <p>Background in C programming but I decided to focus my time coding in Pyhton and use Django, DjangoREST and DASH</p>
+                                        <p>Background in C programming but I decided to focus my time coding in Pyhton</p>
                                     </div>
                                 </div>
                             </div>
@@ -59,7 +59,7 @@ export default class About extends Component {
                                     </span>
                                     <div className="desc">
                                         <h3>Data Science</h3>
-                                        <p>By doing a lot financial analysis in Excel the next step was become a wizard in SQL, Pandas, and Numpy</p>
+                                        <p>By doing a lot financial analysis in Excel I started to work with SQL, Pandas, and Numpy</p>
                                     </div>
                                 </div>
                             </div>
@@ -71,7 +71,7 @@ export default class About extends Component {
                                     </span>
                                     <div className="desc">
                                         <h3>Machine Learning</h3>
-                                        <p>Modeling and expreiment DNN, CNN and RNN using Tensorflow. Currently working with kubeflow and mlflow to implement automated pipelines</p>
+                                        <p>Modeling and experimenting DNN, CNN and RNN using Tensorflow. Currently working with kubeflow and mlflow to implement automated pipelines</p>
                                     </div>
                                 </div>
                             </div>
@@ -93,8 +93,8 @@ export default class About extends Component {
                                     </span>
                                     <div className="desc">
                                         <h3>FrontEnd</h3>
-                                        <p>I use ocassionaly DASH for make analytics dashboards and ReactJS for some small projects like this website. However my passsion is Machine Learning
-                                            and Data Science ,</p>
+                                        <p>I use ocassionaly Dash for make analytics dashboards and React for some small projects like this website. However due my passsion is Machine Learning
+                                            and Data Science I prefer to use Django or Flask</p>
                                     </div>
                                 </div>
                             </div>
