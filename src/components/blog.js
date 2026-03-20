@@ -1,19 +1,18 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Blog extends Component {
-    render() {
-        return (
+export default function Blog() {
+    return (
             <div>
-                <section className="colorlib-blog" data-section="blog">
+                <section id="blog" className="colorlib-blog" data-section="blog">
                     <div className="colorlib-narrow-content">
                         <div className="row">
-                            <div className="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                            <div className="col-md-6 col-md-offset-3 col-md-pull-3 animate-box">
                                 <span className="heading-meta">Read</span>
                                 <h2 className="colorlib-heading">Recent publications</h2>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+                            <div className="col-md-4 col-sm-6 animate-box">
                                 <div className="blog-entry">
                                     <a href="https://medium.com/analytics-vidhya/time-series-forecasting-of-exchange-currency-with-tensor-flow-f475927a68b8" className="blog-img"><img src="images/blog_1.jpeg" className="img-responsive" alt="image_blog1" /></a>
                                     <div className="desc">
@@ -23,7 +22,7 @@ export default class Blog extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+                            <div className="col-md-4 col-sm-6 animate-box">
                                 <div className="blog-entry">
                                     <a href="https://medium.com/analytics-vidhya/achieve-bayesian-optimization-for-tuning-hyper-parameters-df1aad6cb49a" className="blog-img"><img src="images/blog_2.png" className="img-responsive" alt="image_blog2" /></a>
                                     <div className="desc">
@@ -33,7 +32,7 @@ export default class Blog extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+                            <div className="col-md-4 col-sm-6 animate-box">
                                 <div className="blog-entry">
                                     <a href="https://medium.com/analytics-vidhya/understanding-transfer-learning-as-an-methodology-for-efficiency-in-training-cnns-models-1322d316173a" className="blog-img"><img src="images/blog_3.png" className="img-responsive" style={{ width: '40%', height: '120%' }} alt="image_blog3" /></a>
                                     <div className="desc">
@@ -47,6 +46,5 @@ export default class Blog extends Component {
                     </div>
                 </section>
             </div>
-        )
-    }
+        );
 }

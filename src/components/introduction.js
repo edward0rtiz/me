@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Introduction extends Component {
-    render() {
-        return (
+export default function Introduction() {
+    return (
             <div>
-                <section id="colorlib-hero" className="js-fullheight" data-section="home">
+                <section id="home" className="js-fullheight" data-section="home">
                     <div className="flexslider js-fullheight">
                         <ul className="slides">
                             <li style={{ backgroundImage: 'url(images/ed3.JPG)' }}>
@@ -29,7 +28,7 @@ export default class Introduction extends Component {
                                         <div className="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
                                             <div className="slider-text-inner">
                                                 <div className="desc">
-                                                    <h1>I'm not the conventional<br />Product Manager  SWE-ML</h1>
+                                                    <h1>Sr Technical Program Manager<br />AI-Driven Delivery &amp; Transformation</h1>
                                                     <p><a className="btn btn-primary btn-learn" href="https://github.com/edward0rtiz" target="_blank" rel="noopener noreferrer">View Projects <i className="icon-briefcase3" /></a></p>
                                                 </div>
                                             </div>
@@ -56,6 +55,5 @@ export default class Introduction extends Component {
                     </div>
                 </section>
             </div>
-        )
-    }
+        );
 }

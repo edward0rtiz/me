@@ -1,74 +1,79 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Contact extends Component {
-    render() {
-        return (
-            <div>
-                <section class="colorlib-contact" data-section="contact">
-                    <div class="colorlib-narrow-content">
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                                <span class="heading-meta">Get in Touch</span>
-                                <h2 class="colorlib-heading">Contact</h2>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-5">
-                                <div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-                                    <div class="colorlib-icon">
-                                        <i class="icon-globe-outline"></i>
-                                    </div>
-                                    <div class="colorlib-text">
-                                        <p><a href="mailto:edwardarmandoortiz@gmail.com">edwardarmandoortiz@gmail.com</a></p>
-                                    </div>
-                                </div>
+const contactItems = [
+  {
+    id: 'phone',
+    icon: 'icon-phone',
+    label: 'Phone',
+    display: '+57-311-508-1966',
+    href: 'tel:+573115081966',
+  },
+  {
+    id: 'email',
+    icon: 'icon-mail',
+    label: 'Email',
+    display: 'edwardarmandoortiz@gmail.com',
+    href: 'mailto:edwardarmandoortiz@gmail.com',
+  },
+  {
+    id: 'location',
+    icon: 'icon-map',
+    label: 'Location',
+    display: 'Bogota, Colombia / Remote',
+    href: null,
+  },
+  {
+    id: 'linkedin',
+    icon: 'icon-linkedin2',
+    label: 'LinkedIn',
+    display: 'linkedin.com/in/ortizedward',
+    href: 'https://www.linkedin.com/in/ortizedward/',
+  },
+];
 
-                                <div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-                                    <div class="colorlib-icon">
-                                        <i class="icon-map"></i>
-                                    </div>
-                                    <div class="colorlib-text">
-                                        <p>Bogota, Colombia / Remote</p>
-                                    </div>
-                                </div>
-
-                                <div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-                                    <div class="colorlib-icon">
-                                        <i class="icon-social-linkedin"></i>
-                                    </div>
-                                    <div class="colorlib-text">
-                                        <p><a href="https://www.linkedin.com/in/ortizedward">https://www.linkedin.com/in/ortizedward</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*<div class="col-md-7 col-md-push-1">
-                                <div class="row">
-                                    <div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-                                        <form action="mailto:edwardarmandoortiz@gmail.com" method="post" enctype="text/plain">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Name" />
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" name="name" placeholder="Email" />
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" name="mail" placeholder="Subject" />
-                                            </div>
-                                            <div class="form-group">
-                                                <textarea name="comment" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="submit" class="btn btn-primary btn-send-message" value="Send Message" />
-                                            </div>
-                                        </form>
-                                    </div>
-
-                                </div>
-        </div>*/}
-                        </div>
-                    </div>
-                </section>
-            </div >
-        )
-    }
+export default function Contact() {
+  return (
+    <div>
+      <section id="contact" className="colorlib-contact" data-section="contact">
+        <div className="colorlib-narrow-content">
+          <div className="row">
+            <div className="col-md-6 col-md-offset-3 col-md-pull-3 animate-box">
+              <span className="heading-meta">Get in Touch</span>
+              <h2 className="colorlib-heading">Contact</h2>
+            </div>
+          </div>
+          <div className="row animate-box">
+            {contactItems.map((item) => (
+              <div className="col-md-3 col-sm-6" key={item.id} style={{ marginBottom: '16px' }}>
+                <div style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  textAlign: 'center',
+                  padding: '32px 20px',
+                  background: 'rgba(255,255,255,0.04)',
+                  borderRadius: '6px',
+                  border: '1px solid rgba(255,255,255,0.08)',
+                  height: '100%',
+                }}>
+                  <i className={item.icon} style={{ fontSize: '36px', color: '#2c98f0', marginBottom: '14px' }} />
+                  <span style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px', color: '#999', marginBottom: '8px' }}>
+                    {item.label}
+                  </span>
+                  {item.href ? (
+                    <a href={item.href} target={item.id === 'linkedin' ? '_blank' : undefined} rel="noopener noreferrer"
+                      style={{ fontSize: '15px', color: '#383535', wordBreak: 'break-all', lineHeight: '1.5' }}>
+                      {item.display}
+                    </a>
+                  ) : (
+                    <span style={{ fontSize: '15px', color: '#383535', lineHeight: '1.5' }}>{item.display}</span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }
